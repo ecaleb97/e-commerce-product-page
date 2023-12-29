@@ -35,7 +35,7 @@ export function Header() {
               <CartIcon />
               {value === 0 ? '' : (
                 <span className="absolute -top-[8px] -right-[8px] w-4 h-4 px-[10px]
-                bg-red-500 rounded-full text-white text-xs flex items-center justify-center">
+                bg-[#ff7d1a] rounded-full text-white text-xs flex items-center justify-center">
                   {value}
                 </span>
               )}
