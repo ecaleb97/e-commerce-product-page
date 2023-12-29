@@ -3,3 +3,10 @@
     height: 23rem;
   }
 }
+
+@media screen and (width > 440px) and (orientation: landscape) {
+  #images-slider img {
+    object-position: top;
+  }
+  
+}
