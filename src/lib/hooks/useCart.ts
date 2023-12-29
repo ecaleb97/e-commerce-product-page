@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux"
-import { increment, decrement } from "../slices/cartSlice"
+import { increment, decrement, removeCart } from "../slices/cartSlice"
 
 export const useCart = () => {
   const dispatch = useDispatch()
@@ -12,5 +12,9 @@ export const useCart = () => {
     dispatch(decrement())
   }
 
-  return { incrementAction, decrementAction }
+  const removeCartAction = () => {
+    dispatch(removeCart())
+  }
+
+  return { incrementAction, decrementAction, removeCartAction }
 }
