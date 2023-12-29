@@ -8,8 +8,10 @@ function App() {
     <>
       <Header />
       <main>
-        <ImageSlider imageUrls={imgUrls} />
-        <ProductInfo />
+        <div className="md:flex md:gap-10 md:items-center md:px-6 md:pt-12 max-w-[1100px] lg:mx-auto">
+          <ImageSlider imageUrls={imgUrls} />
+          <ProductInfo />
+        </div>
       </main>
     </>
   )

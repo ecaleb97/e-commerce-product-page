@@ -1,6 +1,7 @@
 import { PreviousIcon } from "./Icons/PreviousIcon"
 import { NextIcon } from "./Icons/NextIcon"
 import { useState } from "react"
+import "./ImageSlider.css"
 
 type ImageSliderProps = {
   imageUrls: string[]
@@ -29,9 +30,11 @@ export function ImageSlider({ imageUrls }: ImageSliderProps) {
 
   return (
     <section className="relative">
-      <div className="h-[20rem]">
+      <div id="images-slider" 
+        className="h-[20rem] sm:h-[25rem] md:size-[22rem] lg:size-[30rem]"
+      >
         <img 
-          className="size-full object-cover object-top"
+          className="size-full object-cover object-center md:rounded-xl"
           src={imageUrls[currentImageIndex]} 
           alt="" 
         /> 
@@ -39,13 +42,15 @@ export function ImageSlider({ imageUrls }: ImageSliderProps) {
       <button 
         onClick={handlePreviousClick}
         className="absolute top-1/2 left-4 -translate-y-1/2
-        bg-white/70 p-1 rounded-full flex justify-center items-center">
+        bg-white/70 p-1 rounded-full flex justify-center items-center
+        lg:hidden">
         <PreviousIcon />
       </button>
       <button
         onClick={handleNextClick} 
         className="absolute top-1/2 right-4 -translate-y-1/2
-        bg-white/70 p-1 rounded-full flex justify-center items-center">
+        bg-white/70 p-1 rounded-full flex justify-center items-center
+        lg:hidden">
         <NextIcon />
       </button>
     </section>

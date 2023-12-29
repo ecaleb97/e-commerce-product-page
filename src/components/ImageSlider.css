@@ -1,0 +1,5 @@
+@media screen and (width > 440px) and (width < 640px) {
+  #images-slider {
+    height: 23rem;
+  }
+}

@@ -17,15 +17,35 @@ export function Header() {
 
   return (
     <>
-      <header className="bg-white w-full px-3 py-5">
+      <header className="bg-white w-full px-3 py-5 max-w-[1200px] mx-auto">
         <nav className="flex justify-between">
-          <div className="flex items-center gap-4">
-            <button onClick={handleMenuClick}>
+          <div className="flex items-center gap-4 md:gap-7 lg:gap-14">
+            <button 
+              className="md:hidden"
+              onClick={handleMenuClick}
+            >
               <MenuIcon />
             </button>
             <a href="/" rel="noopener noreferer" className="-mt-[0.22rem]">
               <Logo />
             </a>
+            <nav>
+              <ul className="hidden md:flex gap-4 lg:gap-8">
+                {links.map(link => {
+                  const { id, text, url } = link
+                  return (
+                    <li key={id}>
+                      <a 
+                        className="text-md text-[#68707d]" 
+                        href={url}
+                      >
+                        {text}
+                      </a>
+                    </li>
+                  )
+                })}
+              </ul>
+            </nav>
           </div>
           <div className="flex items-center gap-6">
             <button
