@@ -8,12 +8,12 @@ export const links = [
   { id: 2, text: 'Men', url: '#' },
   { id: 3, text: 'Women', url: '#' },
   { id: 4, text: 'About', url: '#' },
-  { id: 5, text: 'Contact', url: '#' },
-] as const;
+  { id: 5, text: 'Contact', url: '#' }
+] as const
 
 export const imgUrls = [
   imageProduct1,
   imageProduct2,
   imageProduct3,
-  imageProduct4,
+  imageProduct4
 ];
