@@ -90,12 +90,11 @@ export function Header() {
                     You have no items in your cart.
                 </p> 
                 : (
-                  <div className="flex flex-col gap-12 sm:gap-12">
+                  <div className="flex flex-col gap-12 sm:gap-12 sm:mt-6">
                     <div className="flex justify-evenly gap-3 items-center">
                       <img src={imgUrls[0]} className="size-12 rounded-lg" alt="" />
                       <div className="flex flex-col items-start">
-                        <small className="text-[15px] text-[#68707d] text-left
-                        tracking-wider">
+                        <small className="text-[15px] text-[#68707d] text-left">
                         Fall Limited Edition Sneakers
                         </small>
                         <p className="text-[#68707d]">
@@ -106,7 +105,7 @@ export function Header() {
                         </p>
                       </div>
                       <button 
-                        className="text-[#68707d]"
+                        className="text-[#68707d] hover:text-red-500"
                         onClick={removeCartAction}
                       >
                         <DeleteIcon />
@@ -117,7 +116,6 @@ export function Header() {
                       Checkout
                     </button>
                   </div>
-                  
                 )
               }
             </div>
