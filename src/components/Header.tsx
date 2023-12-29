@@ -17,7 +17,8 @@ export function Header() {
 
   return (
     <>
-      <header className="bg-white w-full px-3 py-5 max-w-[1200px] mx-auto">
+      <header className="bg-white w-full px-3 py-5 max-w-[1200px] mx-auto md:px-6
+      lg:border-b-[2px] lg:border-[#f7f8fd] lg:pb-7">
         <nav className="flex justify-between">
           <div className="flex items-center gap-4 md:gap-7 lg:gap-14">
             <button 
@@ -36,7 +37,8 @@ export function Header() {
                   return (
                     <li key={id}>
                       <a 
-                        className="text-md text-[#68707d]" 
+                        className="text-md text-[#68707d] hover:text-[#1d2025]
+                        hover:border-b-[4px] hover:border-[#ff7d1a] hover:pb-8" 
                         href={url}
                       >
                         {text}
@@ -61,7 +63,8 @@ export function Header() {
               )}
               
             </button>
-            <div className="size-9"> 
+            <div className="size-9 hover:border-[2px] hover:border-[#ff7d1a] 
+            rounded-full hover:scale-125 cursor-pointer"> 
               <img className="size-full" src={avatar} alt="User avatar" />
             </div>
           </div>
