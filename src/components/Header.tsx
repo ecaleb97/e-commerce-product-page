@@ -5,6 +5,7 @@ import { useState } from "react"
 import { CloseIcon } from "./Icons/CloseIcon"
 import { links } from "../lib/data"
 import { useAppSelector } from "../lib/types"
+import avatar from '../assets/images/image-avatar.png'
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -41,7 +42,7 @@ export function Header() {
               
             </button>
             <div className="size-9"> 
-              <img className="size-full" src="../assets/images/image-avatar.png" alt="User avatar" />
+              <img className="size-full" src={avatar} alt="User avatar" />
             </div>
           </div>
         </nav>
