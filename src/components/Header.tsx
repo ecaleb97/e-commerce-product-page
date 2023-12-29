@@ -41,7 +41,7 @@ export function Header() {
               
             </button>
             <div className="size-9"> 
-              <img className="size-full" src="../src/assets/image-avatar.png" alt="User avatar" />
+              <img className="size-full" src="../assets/images/image-avatar.png" alt="User avatar" />
             </div>
           </div>
         </nav>
