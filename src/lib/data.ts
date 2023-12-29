@@ -7,7 +7,7 @@ export const links = [
 ] as const;
 
 export const imgUrls = [
-  '../assets/image-product-1.jpg',
+  '.../public/image-product-1.jpg',
   '../src/assets/image-product-2.jpg',
   '../src/assets/image-product-3.jpg',
   '../src/assets/image-product-4.jpg',
