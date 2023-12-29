@@ -9,7 +9,6 @@ import imageProduct4 from "./assets/images/image-product-4.jpg"
 
 function App() {
   const imgUrls = [
-    avatar,
     imageProduct1,
     imageProduct2,
     imageProduct3,
