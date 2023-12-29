@@ -7,8 +7,8 @@ export const links = [
 ] as const;
 
 export const imgUrls = [
-  './src/assets/image-product-1.jpg',
-  './src/assets/image-product-2.jpg',
-  './src/assets/image-product-3.jpg',
-  './src/assets/image-product-4.jpg',
+  '../assets/image-product-1.jpg',
+  '../src/assets/image-product-2.jpg',
+  '../src/assets/image-product-3.jpg',
+  '../src/assets/image-product-4.jpg',
 ];
