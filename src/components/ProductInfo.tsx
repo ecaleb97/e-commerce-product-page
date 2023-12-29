@@ -31,7 +31,7 @@ export function ProductInfo() {
             50%
           </span>
         </div>
-        <span className="bg-[#f7f8fd] md:bg-none text-[#b6bcc8] font-semibold line-through">
+        <span className="md:bg-none text-[#b6bcc8] font-semibold line-through">
           $250.00
         </span>
       </div>
